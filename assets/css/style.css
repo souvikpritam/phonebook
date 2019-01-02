@@ -1,0 +1,130 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.add_contact_btn { margin-top: 30px;text-align: center; }
+
+.button {
+	background-color: #1686d9;
+	border-radius: 30px;
+	font-weight: 700;
+}
+
+.popUpButton {
+	background-color: #25476F;
+	outline: none;
+	position: relative;
+	top: 15px;
+	font-weight: 600;
+}
+
+.button,.popUpButton {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 28px;
+}
+
+.add_contact_btn .button:hover,.add_contact_btn .button:focus,
+.add_contact_btn .button:active {
+	background-color: #ffffff;
+	border: 2px solid #1686d9;
+	color: #1686d9;
+	transition: .3s;
+	text-decoration: none;
+}
+
+.popUpButton:hover,.popUpButton:focus,
+.popUpButton:active {
+	background-color: #ffffff;
+	border: 2px solid #25476F;
+	color: #1686d9;
+	transition: .3s;
+	text-decoration: none;
+}
+
+/* #### Modal #### */
+.bg_modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -200%;
+}
+
+.bg_modal.popup-visible {
+	top: 0%;
+}
+
+.modal_content {
+	width: 500px;
+	height: 430px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	text-align: center;
+	padding: 20px;
+	margin-top: 50px;
+	z-index: 999999;
+	position: relative;
+
+}
+
+.modal_content img {
+	width: 90px;
+	height: auto;
+}
+
+input {
+	width: 50%;
+	display: block;
+	margin: 15px auto;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #d2d2d2;
+}
+
+input:hover,input:focus,input:active {
+	border-color: #7952b3;
+    box-shadow: 0 0 0 3px rgba(121,82,179,.25);
+    outline: none; 
+}
+
+input.field-error {
+    border: 2px solid #FF5722;
+}
+
+input.field-error::placeholder {
+	color: #FF5722;
+	font-weight: 600;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 40px;
+	transform: rotate(45deg);
+	color: #1686d9;
+	
+}
+/* #### End of Modal #### */
+
+.phonebook_table {
+    padding-top: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+

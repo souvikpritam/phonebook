@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PhoneBook</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+	<!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!---Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <!--Main stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+</head>
+<body>
+
+<div class="container-fluid">
+	<h2>Phonebook</h2>
+		<div class="add_contact_btn">
+			<a href="javascript:void(0);" id="button" class="button">Add Contact</a>
+		</div>
+			
+		<div class="bg_modal">
+			<div class="modal_content">
+				<div class="close">+</div>
+				<img src="assets/img/avatar.png" alt="">
+					<input type="text" name="" id="firstname" placeholder="FirstName" />
+					<input type="text" name="" id="lastname" placeholder="LastName" />
+					<input type="text" name="" id="address" placeholder="Address" />
+					<input type="text" name="" id="phone_number" placeholder="Phone Number" />
+					<a href="javascript:void(0);" id="saveButton" class="popUpButton">Save Contact</a>
+			</div><!--/.modal_content-->
+		</div><!--/.bg_modal-->
+		<div class="phonebook_table">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>FirstName</th>
+						<th>LastName</th>
+						<th>Address</th>
+						<th>Phone Number</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="populateTableRow"></tbody>
+			</table>
+		</div><!--/.phonebook_table-->		
+</div><!--/.container-fluid-->
+
+<!--Main Javascript-->
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/function.js"></script>
+<script type="text/javascript" src="assets/js/eventlistener.js"></script>
+
+
+</body>
+</html>
